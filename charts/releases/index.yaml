@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  fortigate-exporter:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2025-04-11T12:27:00.069384+07:00"
+    description: A Helm chart for Prometheus Fortigate Exporter
+    digest: c2a21cd374a8e29535c307da3eb87a84c55197f122cf5484fa90fb347d46f53d
+    name: fortigate-exporter
+    type: application
+    urls:
+    - fortigate-exporter-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-11T12:27:00.068244+07:00"
