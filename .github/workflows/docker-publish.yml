@@ -27,6 +27,9 @@ jobs:
         with:
           go-version: 1.20
 
+      - name: Download Go module dependencies
+        run: go mod download
+
       - name: Build fortigate_exporter binary
         run: |
           mkdir -p .build/linux-amd64
