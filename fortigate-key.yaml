@@ -3,5 +3,4 @@
   # If you have a smaller fortigate unit you might want
   # to exclude sensors as they do not have any
   probes:
-    exclude:
-      - System/SensorInfo
+    include:
