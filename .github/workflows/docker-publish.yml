@@ -70,7 +70,7 @@ jobs:
           helm package ./charts/fortigate-exporter --destination ./charts/releases
 
       - name: Upload Helm Chart Package as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@8f15ffb76f7e77efabda9fc08c1a59b0db0e6eff
         with:
           name: fortigate-exporter-chart
           path: ./charts/releases/*.tgz
