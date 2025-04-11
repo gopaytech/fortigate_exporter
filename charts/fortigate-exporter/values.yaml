@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/gopaytech/fortigate_exporter
+  tag: latest
+  pullPolicy: IfNotPresent
+
+fortigate:
+  address: "10.193.42.178"
+  apiKey: "FORTIGATE_API_TOKEN"  # You will override this with secrets in production
+
+service:
+  type: ClusterIP
+  port: 9182
+
+resources: {}
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

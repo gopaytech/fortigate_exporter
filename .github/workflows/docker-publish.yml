@@ -56,3 +56,21 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           platforms: linux/amd64
+
+      - name: Set up Helm
+        run: |
+          curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
+      - name: Lint the Helm Chart
+        run: |
+          helm lint ./charts/fortigate-exporter
+
+      - name: Package the Helm Chart
+        run: |
+          helm package ./charts/fortigate-exporter --destination ./charts/releases
+
+      - name: Upload Helm Chart Package as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: fortigate-exporter-chart
+          path: ./charts/releases/*.tgz

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "fortigate-exporter.fullname" . }}
+  labels:
+    {{- include "fortigate-exporter.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: metrics
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "fortigate-exporter.selectorLabels" . | nindent 4 }}
