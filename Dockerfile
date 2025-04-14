@@ -7,7 +7,6 @@ ARG ARCH="amd64"
 ARG OS="linux"
 ARG FORTIGATE_KEY_FILE
 COPY .build/${OS}-${ARCH}/fortigate_exporter /bin/fortigate_exporter
-COPY $FORTIGATE_KEY_FILE /fortigate-key.yaml
 
 EXPOSE      9710
 USER        nobody
