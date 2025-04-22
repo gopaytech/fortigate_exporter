@@ -6,7 +6,7 @@ image:
   pullPolicy: IfNotPresent
 
 fortigate:
-  address: "10.193.42.178"
+  address: "FORTIGATE_IP_ADDRESS"
   apiKey: "FORTIGATE_API_TOKEN"  # You will override this with secrets in production
 
 service:
