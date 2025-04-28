@@ -13,6 +13,10 @@ Prometheus exporter for FortiGate® firewalls.
 
 ---
 
+Installing
+
+helm repo add fortigate-exporter https://gopaytech.github.io/fortigate_exporter/charts/releases
+
 **NOTE:** This is not an official Fortinet product, it is developed fully independently by professionals and hobbyists alike.
 
   * [Supported Metrics](#supported-metrics)
