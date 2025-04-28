@@ -3,12 +3,12 @@ entries:
   fortigate-exporter:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-04-28T09:02:32.152403+07:00"
+    created: "2025-04-28T09:06:00.470355+07:00"
     description: A Helm chart for Prometheus Fortigate Exporter
     digest: 68e47e75bcd02afe91b0130b26a984fc2b93db4d45d3f1400a5f95c5ff83fa80
     name: fortigate-exporter
     type: application
     urls:
-    - https://gopaytech.github.io/fortigate_exporter/charts/fortigate-exporter/release/releases/fortigate-exporter-0.1.0.tgz
+    - https://gopaytech.github.io/fortigate_exporter/charts/fortigate-exporter/releases/fortigate-exporter-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-28T09:02:32.151804+07:00"
+generated: "2025-04-28T09:06:00.469627+07:00"
