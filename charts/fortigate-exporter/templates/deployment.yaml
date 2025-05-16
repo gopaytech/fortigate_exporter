@@ -19,9 +19,13 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - containerPort: 9182
+            - containerPort: 9710
               name: metrics
-
-          envFrom:
-          - secretRef:
-              name: "{{ .Values.fortigate.configSecretName }}"
+          volumeMounts:
+            - mountPath: "/config"
+              name: config
+              readOnly: true
+        volumes:
+          - name: config
+            secret:
+              secretName: {{.Values.fortigate.configSecretName }}
