@@ -20,3 +20,8 @@ include Makefile.common
 STATICCHECK_IGNORE =
 
 DOCKER_IMAGE_NAME ?= fortigate-exporter
+
+.PHONY: helm.create.releases
+helm.create.releases:
+	helm package charts/fortigate-exporter --destination charts/releases
+	helm repo index charts/releases

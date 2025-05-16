@@ -21,8 +21,7 @@ spec:
           ports:
             - containerPort: 9182
               name: metrics
-          env:
-            - name: FORTIGATE_ADDR
-              value: "{{ .Values.fortigate.address }}"
-            - name: FORTIGATE_API_KEY
-              value: "{{ .Values.fortigate.apiKey }}"
+
+          envFrom:
+          - secretRef:
+              name: "{{ .Values.fortigate.configSecretName }}"
