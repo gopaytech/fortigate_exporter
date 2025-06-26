@@ -25,7 +25,7 @@ spec:
             - mountPath: "/config"
               name: config
               readOnly: true
-        volumes:
-          - name: config
-            secret:
-              secretName: {{.Values.fortigate.configSecretName }}
+      volumes:
+        - name: config
+          secret:
+            secretName: {{.Values.fortigate.configSecretName }}
