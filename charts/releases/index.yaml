@@ -3,9 +3,9 @@ entries:
   fortigate-exporter:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-08-15T12:40:39.881169+05:30"
+    created: "2025-08-15T12:46:53.623004+05:30"
     description: A Helm chart for Prometheus Fortigate Exporter
-    digest: 9be96bf528cb63881ac8a9be99023281b59f72e7732ed782a3d3cae3e2a5c161
+    digest: 6d3ad3ee0b204968b3eeb218a96ce65b1577d64534eba2dbd3148ade01df84d4
     name: fortigate-exporter
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: latest
-    created: "2025-08-15T12:40:39.880848+05:30"
+    created: "2025-08-15T12:46:53.622739+05:30"
     description: A Helm chart for Prometheus Fortigate Exporter
     digest: f1e2cc1aa71df32611c543f8a43486989c42eb50dbe9fb6d48ca84eb694fae07
     name: fortigate-exporter
@@ -23,7 +23,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: latest
-    created: "2025-08-15T12:40:39.880249+05:30"
+    created: "2025-08-15T12:46:53.622346+05:30"
     description: A Helm chart for Prometheus Fortigate Exporter
     digest: dd26a7f1bcb34bfd3e3310db351a6409d9489b3aedae671e3542257e816643fd
     name: fortigate-exporter
@@ -33,7 +33,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: latest
-    created: "2025-08-15T12:40:39.879894+05:30"
+    created: "2025-08-15T12:46:53.621742+05:30"
     description: A Helm chart for Prometheus Fortigate Exporter
     digest: 68e47e75bcd02afe91b0130b26a984fc2b93db4d45d3f1400a5f95c5ff83fa80
     name: fortigate-exporter
@@ -41,4 +41,4 @@ entries:
     urls:
     - fortigate-exporter-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-15T12:40:39.878752+05:30"
+generated: "2025-08-15T12:46:53.62132+05:30"
