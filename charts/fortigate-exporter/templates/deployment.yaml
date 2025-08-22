@@ -18,7 +18,7 @@ spec:
         - name: fortigate-exporter
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          command: ["fortigate_exporter"]
+          command: ["/bin/fortigate_exporter"]
           args: ["-auth-file", "/config/fortigate-key.yaml", "--insecure"]
           ports:
             - containerPort: 9710
