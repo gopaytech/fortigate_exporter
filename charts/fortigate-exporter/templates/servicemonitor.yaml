@@ -18,4 +18,3 @@ spec:
     - port: http
       interval: {{ .Values.serviceMonitor.interval }}
       scrapeTimeout: {{ .Values.serviceMonitor.scrapeTimeout }}
-{{- end }}
