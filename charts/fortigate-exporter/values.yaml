@@ -13,7 +13,6 @@ service:
   port: 9710
 
 serviceMonitor:
-  enabled: true
   interval: 10s
   scrapeTimeout: 10s
   labels: {}
