@@ -16,3 +16,4 @@ serviceMonitor:
   interval: 10s
   scrapeTimeout: 10s
   labels: {}
+  
